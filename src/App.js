@@ -5,7 +5,9 @@ import MyComponent from "./MyComponent";
 export default function App() {
   return (
     <div className="App">
-      <MyComponent />
+      <MyComponent name="선만" favoriteNumber={3}>
+        innerText
+      </MyComponent>
     </div>
   );
 }
