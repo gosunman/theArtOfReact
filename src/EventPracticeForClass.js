@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class EventPractice extends Component {
+export default class EventPracticeForClass extends Component {
   state = {
     username: "",
     message: ""
