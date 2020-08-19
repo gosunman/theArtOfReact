@@ -1,14 +1,26 @@
 import React, { useState } from "react";
 
 const EventPracticeForFunction = () => {
-  const [username, setUsername] = useState("");
-  const [message, setMessage] = useState("");
-  const onChangeUsername = (e) => setUsername(e.target.value);
-  const onChangeMessage = (e) => setMessage(e.target.value);
+  const [form, setForm] = useState({
+    username: "",
+    message: ""
+  });
+
+  const { username, message } = form;
+
+  const onChange = (e) => {
+    const nextForm = {
+      ...form,
+      [e.target.name]: e.target.value
+    };
+    setForm(nextForm);
+  };
   const onClick = () => {
     alert(username + ": " + message);
-    setUsername("");
-    setMessage("");
+    setForm({
+      username: "",
+      message: ""
+    });
   };
   const onKeyPress = (e) => {
     if (e.key === "Enter") {
@@ -18,13 +30,13 @@ const EventPracticeForFunction = () => {
 
   return (
     <div>
-      <h1>이벤트 연습</h1>
+      <h1>함수형에서 이벤트 연습</h1>
       <input
         type="text"
         name="username"
         placeholder="username"
         value={username}
-        onChange={onChangeUsername}
+        onChange={onChange}
         onKeyPress={onKeyPress}
       />
       <input
@@ -32,7 +44,7 @@ const EventPracticeForFunction = () => {
         name="message"
         placeholder="message"
         value={message}
-        onChange={onChangeMessage}
+        onChange={onChange}
         onKeyPress={onKeyPress}
       />
       <button onClick={onClick}>확인</button>

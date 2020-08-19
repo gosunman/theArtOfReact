@@ -29,7 +29,7 @@ export default class EventPracticeForClass extends Component {
   render() {
     return (
       <div>
-        <h1>이벤트 연습</h1>
+        <h1>클래스형에서 이벤트 연습</h1>
         <input
           type="text"
           name="username"

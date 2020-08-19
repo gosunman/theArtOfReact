@@ -3,7 +3,8 @@ import "./styles.css";
 import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import Say from "./Say";
-import EventPractice from "./EventPractice";
+import EventPracticeForClass from "./EventPracticeForClass";
+import EventPracticeForFunction from "./EventPracticeForFunction";
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
       <MyComponent favoriteNumber={4}> 어린이 </MyComponent>
       <Counter />
       <Say></Say>
-      <EventPractice />
+      <EventPracticeForClass />
+      <EventPracticeForFunction />
     </div>
   );
 }
