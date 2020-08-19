@@ -1,11 +1,13 @@
 import React from "react";
 import "./styles.css";
+import MyComponent from "./MyComponent";
+import Counter from "./Counter";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <MyComponent favoriteNumber={4}> 어린이 </MyComponent>
+      <Counter />
     </div>
   );
 }

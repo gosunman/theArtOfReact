@@ -13,12 +13,12 @@ const MyComponent = ({ name, favoriteNumber, children }) => {
 };
 
 MyComponent.defaultProps = {
-  name: "(지정되지 않음)"
+  name: "(지정되지 않음)",
 };
 
-MyComponent.PropTypes = {
+MyComponent.propTypes = {
   name: PropTypes.string,
-  favoriteNumber: PropTypes.number.isRequired
+  favoriteNumber: PropTypes.number.isRequired,
 };
 
 export default MyComponent;
