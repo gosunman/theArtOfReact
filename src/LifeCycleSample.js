@@ -7,7 +7,6 @@ export default class LifeCycleSample extends Component {
   };
 
   myRef = null;
-
   constructor(props) {
     super(props);
     console.log("constructor");
@@ -62,6 +61,7 @@ export default class LifeCycleSample extends Component {
     };
     return (
       <div>
+        {/* {this.props.missing.value} */}
         <h1 style={style} ref={(ref) => (this.myRef = ref)}>
           {this.state.number}
         </h1>

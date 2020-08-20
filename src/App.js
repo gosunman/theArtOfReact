@@ -10,6 +10,7 @@ import RefSample from "./RefSample";
 import ScrollBox from "./ScrollBox";
 import IterationSample from "./IterationSample";
 import LifeCycleSample from "./LifeCycleSample";
+import ErrorBoundary from "./ErrorBoundary";
 
 function getRandomColor() {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -30,7 +31,9 @@ export default class App extends Component {
     return (
       <div className="App">
         <button onClick={this.handleClick}>random color</button>
-        <LifeCycleSample color={this.state.color} />
+        <ErrorBoundary>
+          <LifeCycleSample color={this.state.color} />
+        </ErrorBoundary>
         <br />
         <IterationSample />
         <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
