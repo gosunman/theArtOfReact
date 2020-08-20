@@ -9,11 +9,14 @@ import ValidationSample from "./ValidationSample";
 import RefSample from "./RefSample";
 import ScrollBox from "./ScrollBox";
 import IterationSample from "./IterationSample";
+import LifeCycleSample from "./LifeCycleSample";
 
 export default class App extends Component {
   render() {
     return (
       <div className="App">
+        <LifeCycleSample />
+        <br />
         <IterationSample />
         <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
         <button onClick={() => this.scrollBox.scrollToBottom()}>
