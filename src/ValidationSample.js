@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./styles.css";
 
 export default class ValidationSample extends Component {
+  input = React.createRef();
+
   state = {
     password: "",
     clicked: false,
@@ -17,6 +19,7 @@ export default class ValidationSample extends Component {
       clicked: true,
       validated: this.state.password === "0000"
     });
+    this.input.current.focus();
   };
 
   render() {
@@ -25,6 +28,7 @@ export default class ValidationSample extends Component {
         <h1>ref 연습</h1>
 
         <input
+          ref={this.input}
           type="password"
           value={this.state.password}
           onChange={this.handleChange}
