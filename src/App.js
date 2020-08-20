@@ -7,11 +7,16 @@ import EventPracticeForClass from "./EventPracticeForClass";
 import EventPracticeForFunction from "./EventPracticeForFunction";
 import ValidationSample from "./ValidationSample";
 import RefSample from "./RefSample";
+import ScrollBox from "./ScrollBox";
 
 export default class App extends Component {
   render() {
     return (
       <div className="App">
+        <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
+        <button onClick={() => this.scrollBox.scrollToBottom()}>
+          맨 밑으로
+        </button>
         <RefSample />
         <MyComponent favoriteNumber={4}> 어린이 </MyComponent>
         <Counter />
