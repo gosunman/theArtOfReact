@@ -27,7 +27,7 @@ export default class LifeCycleSample extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log("shouldComponentUpdate", nextProps, nextState);
-    return nextState.number % 10 !== 4;
+    return nextState.number % 2 !== 1;
   }
 
   componentWillUnmount() {
