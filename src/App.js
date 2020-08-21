@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Counter from "./Counter";
 import Info from "./Info";
 import ForReducer from "./ForReducer";
+import ForReducer2 from "./ForReducer2";
 
 import "./styles.css";
 
@@ -12,6 +13,8 @@ const App = () => {
     <div className="App">
       <h1>New App</h1>
       <h1>Please, Work For Me</h1>
+      <hr />
+      <ForReducer2 />
       <hr />
       <ForReducer />
       <hr />
