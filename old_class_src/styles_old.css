@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.success {
+  background-color: lightgreen;
+}
+
+.failure {
+  background-color: lightcoral;
+}
