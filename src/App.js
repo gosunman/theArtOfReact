@@ -26,6 +26,7 @@ const App = () => {
         {visible ? "hide" : "show"}
       </button>
       {visible && <Info />}
+
       <hr />
       <Counter />
     </div>

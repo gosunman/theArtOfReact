@@ -29,7 +29,7 @@ export default class EventPracticeForClass extends Component {
   render() {
     return (
       <div>
-        <h1>클래스형에서 이벤트 연습</h1>
+        <h1>í´ëì¤íìì ì´ë²¤í¸ ì°ìµ</h1>
         <input
           type="text"
           name="username"
@@ -46,7 +46,7 @@ export default class EventPracticeForClass extends Component {
           onChange={this.handleChange}
           onKeyPress={this.handleKeyPress}
         />
-        <button onClick={this.handleClick}>확인</button>
+        <button onClick={this.handleClick}>íì¸</button>
       </div>
     );
   }
