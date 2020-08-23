@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "theartofreact",
   "version": "1.0.0",
   "description": "리액트 연습하기",
   "keywords": [],
@@ -9,7 +9,8 @@
     "node-sass": "4.14.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "react-scripts": "^3.4.3"
+    "react-scripts": "^3.4.3",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "typescript": "3.8.3"
